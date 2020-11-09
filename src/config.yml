@@ -1,0 +1,163 @@
+Commands:
+  Towny:
+    Help:
+      - "&ahelp1"
+      - "&ahelp2"
+    Create:
+      AlreadyInTown: "&cYou are already in a town! '/townyplus disband' to disband your current town."
+      NotEnoughMoney: "&cYou do not have enough {0} to establish your own town!\n &6You need &c{1} &2{0} to establish your own town!"
+      TownAlreadyExists: "&cA town with that name already exists!"
+      NameLength: "&cTown name Must be within 3 to 16 characters"
+      ClaimOverlaps: "&6Creating a town here will cause your town claim to overlap with another town"
+      NotEnoughFunds: "&cTransaction Failed, Not Enough Funds."
+      NotEnoughClaims: "&cYou don't hae enough claims to create a town, you need at least 100"
+      SuccessPaid: "&aYou paid &a{0} &2{1} to establish your town"
+      SuccessCreate: "&aYou successfully established a town named {0}!"
+    Disband:
+      NotInTown: "&cYou are not in a town!"
+      Success: "&aSuccessfully abandoned your town!"
+    Spawn:
+      NotInTown: "&cYou are not in a town!"
+      Success: "&aSending you to your town's spawnpoint!"
+    SetSpawn:
+      NotInTown: "&cYou are not in a town!"
+      NotInClaim: "&cThe spawnpoint needs to be inside of your town!"
+      Success: "&aSuccessfully set your town's spawnpoint to your location"
+    Deposit:
+      NotEnoughMoney: "&cYou don't have that much money!"
+      NotInTown: "&cYou are not in a town!"
+      Success: "&2Succesfully deposited &a{0} &2{1} into your town's bank\nTown's balance: &a{2} &2{1}"
+      SomethingWrong: "&cSomething went wrong with the deposit please try again"
+    Withdraw:
+      NotInTown: "&cYou are not in a town!"
+      NotEnoughMoney: "&cYour town doesn't have that much money!"
+      Success: "&cSuccesfully withdrew &a{0} &2{1} from your town's bank\nTown's balance: &a{2} &2{1}"
+      SomethingWrong: "&cSomething went wrong with the deposit please try again"
+    Open:
+      NotInTown: "&cYou are not in a town!"
+      Success: "&2Successfully set town status to &aopen"
+    Close:
+      NotInTown: "&cYou are not in a town!"
+      Success: "&2Successfully set town status to &aclose"
+    PlayerInfo:
+      SuccessName: "&6{0}:"
+      SuccessInTown: "&3Rank: &b{0}\n&3Town: &b{1} (population: {2})"
+      SuccessPlayer: "&3Claims: &b{0}\n&3Money: &b{1}"
+    Info:
+      NoTownFound: "&cCouldn't find the specified town!"
+      NoTownSpecified: "&cYou need to specify the town name!"
+      Success: "&b&l {0}:\n&3Population: &b{1}\n&3   Online population: &2{2}
+      \n&3   Offline population: &c{3}\n&3   Founder: &b{4}\n&3Claim size: {5}x{6}\n&3Level: &b{7}"
+    Invite:
+      NotInTown: "&cYou are not in a town"
+      AlreadyInTown: "&cThat player is already in a town!"
+      SuccessSender: "&aYou Successfully Invited {0} to your town"
+      SuccessReceiver: "&aYou were Invited to {0}"
+    Kick:
+      NotInTown: "&cYou are not in a town"
+      NotInYourTown: "&cThat player is already in a town!"
+      KickSelf: "&cYou can't kick yourself! use '/townyPlus disband' to leave this town"
+      Success: "&aYou kicked player {0} from your town."
+      KickNotification: "&cYou were kicked from your town"
+    Promote:
+      NotInTown: "&cYou are not in a town"
+      NotInYourTown: "&cThat player is not in your town!"
+      NotHighEnoughRank: "&cYou don't have enough permissions to promote that person to your rank or above"
+      Success: "&aPromoted {0} to {1}"
+    Demote:
+      NotInTown: "&cYou are not in a town"
+      NotInYourTown: "&cThat player is not in your town!"
+      NotHighEnoughRank: "&cYou don't have enough permissions to demote that person"
+      CantBeDemoted: "&cThis person get be demoted anymore"
+      Success: "Demoted {0} to {1}"
+    List:
+      Header: "&6======<Town>======"
+      Content: "&bTown: {0} Size: {1}"
+    ListOpen:
+      Header: "&6======<Open Towns>======"
+      Content: "&bTown:{0} Size: {1}"
+    Claim:
+      NotInTown: "&cYou are not in a town"
+      NotEnoughClaims: "&cYou Don't have Enough Claims to Expand your town that much"
+      Success: "&aYou Expanded Your Town claim to the {0} by {1} block(s)"
+    ShowClaim:
+      NotInTown: "&cYou are not in a town"
+      Success: "&aNow Showing Claim Borders"
+    Join:
+      AlreadyInTown: "&cYou are already in a town."
+      TownNotFound: "&cSpecified Town doesn't exist"
+      Success: "&aYou Joined Town {0}"
+      CantJoin: "&cThis Town isn't open and you don't have an invite to this town"
+    Leave:
+      NotInTown: "&cYou are not in a town!"
+      FounderLeave: "&cYou are the founder of the town, if you wish to abandon the town please use /townyplus disband"
+      Success: "&aYou left your Town"
+  Claims:
+    Help:
+      - "help1"
+      - "help2"
+    Buy:
+      NotPlayer: "&cYou must be a player to run this command"
+      NotEnoughMoney: "&cInsufficient Funds"
+      SomethingWrong: "&cSomething went wrong with the transaction, please try again"
+    Give:
+      Permission: "townyplus.claims.give"
+      NotEnoughPermission: "&cInsufficient Permission"
+      SuccessReceiver: "&aYou received {0} claims"
+    Send:
+      NotPlayer: "&cYou must be a player to run this command"
+      NotEnoughClaims: "&cYou don't have enough claims to send"
+      SuccessSender: "&aYou sent {0} claims to {1}"
+      SuccessReceiver: "&aYou received {0} claims from {1}"
+    UnknownCommand: "&cUnknown Command please type /claims help"
+Values:
+  ClaimPrice: 10.0
+  TownCreationCost: 100.0
+  PlayerPoints: 10
+  ClaimPoints: 0.04
+  LevelStart: 10
+  LevelMult: 1
+  LevelAdd: 1
+  ClaimParticle: "REDSTONE"
+  Ranks:
+    Recruit:
+      - "TOWNSPAWN"
+      - "DEPOSIT"
+    Resident:
+      - "BUILD"
+      - "TOWNSPAWN"
+      - "DEPOSIT"
+    Council:
+      - "CLAIM"
+      - "BUILD"
+      - "SETSPAWN"
+      - "TOWNSPAWN"
+      - "KICK"
+      - "INVITE"
+      - "DEPOSIT"
+      - "WITHDRAW"
+      - "PROMOTEDEMOTE"
+    Founder:
+      - "CLAIM"
+      - "BUILD"
+      - "SETSPAWN"
+      - "TOWNSPAWN"
+      - "KICK"
+      - "INVITE"
+      - "DEPOSIT"
+      - "WITHDRAW"
+      - "OPENTOWN"
+      - "PROMOTEDEMOTE"
+  ClaimMulti:
+    0: 1.0
+    1: 2.0
+    2: 3.0
+    3: 3.3
+    4: 4.2
+    5: 5.5
+    6: 6.9
+
+
+
+
+

@@ -1,0 +1,15 @@
+name: Main
+author: Arhke
+version: 1.0
+main: com.Arhke.District.Main
+description: Main
+api-version: 1.15
+depend: [Vault]
+
+commands:
+  towny:
+    description: towny
+    usage:
+  claims:
+    description: townyplus
+    usage: /command
